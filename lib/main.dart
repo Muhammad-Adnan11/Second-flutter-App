@@ -34,30 +34,47 @@ class MyApp extends StatelessWidget {
       //  ),
       //   ],
       //   ),
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              //First commit
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.blue,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.green,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.black,
-              ),
-            ],
+
+      body: Column(children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextField(
+            keyboardType: TextInputType.emailAddress,
+            cursorColor: Colors.blue,
+            enabled: true,
+            style: TextStyle(fontSize: 11, color: Colors.red),
+            decoration: InputDecoration(
+              filled: true,
+              prefixIcon: Icon(Icons.email),
+              fillColor: Colors.grey,
+              hintText: 'adnan shah',
+              labelText: 'Email',
+              hintStyle: TextStyle(fontSize: 14, color: Colors.black),
+            ),
           ),
-        ],
-      ),
+        ),
+      ]),
     ));
   }
 }
+
+          //Stack(
+          //   children: [
+          //     //First commit
+          //     Container(
+          //       height: 100,
+          //       width: 100,
+          //       color: Colors.blue,
+          //     ),
+          //     Container(
+          //       height: 100,
+          //       width: 100,
+          //       color: Colors.green,
+          //     ),
+          //     Container(
+          //       height: 100,
+          //       width: 100,
+          //       color: Colors.black,
+          //     ),
+          //   ],
+          // ),
