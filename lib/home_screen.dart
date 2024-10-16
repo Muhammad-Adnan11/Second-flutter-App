@@ -15,6 +15,9 @@ class _home_screenState extends State<home_screen> {
       appBar: AppBar(
         title: const Text('Navigation Bar'),
         backgroundColor: Colors.teal,
+        iconTheme: IconThemeData(color: Colors.white),
+        centerTitle: true,
+        titleTextStyle: TextStyle(color: Colors.white),
       ),
       drawer: Drawer(
         child: ListView(
@@ -22,7 +25,7 @@ class _home_screenState extends State<home_screen> {
           children: [
             const UserAccountsDrawerHeader(
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fstatusneo.com%2Ffrom-pixels-to-reality-how-ai-generated-images-are-revolutionizing-industries%2F&psig=AOvVaw1fQTqA2TgNm7gqNwjZkRVJ&ust=1710585862234000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLCTlPer94QDFQAAAAAdAAAAABAE'),
+                  backgroundImage: NetworkImage(''),
                 ),
                 accountName: Text('Adnan shah'),
                 accountEmail: Text("adnankhalil984@gmail.com")),
