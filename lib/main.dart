@@ -17,11 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'first demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: home_screen(),
+      home: const home_screen(),
       // home: Scaffold(
       //   appBar: AppBar(
       //     title: Center(child: Text('my second app')),

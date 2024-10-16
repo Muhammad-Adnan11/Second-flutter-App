@@ -21,8 +21,8 @@ class _home_twoState extends State<home_two> {
             itemCount: 100,
             itemBuilder: (context, index) {
               return ListTile(
-                leading: CircleAvatar(backgroundImage: NetworkImage('')),
-                title: Text('Asif taj'),
+                leading: const CircleAvatar(backgroundImage: NetworkImage('')),
+                title: const Text('Asif taj'),
                 onTap: () {},
               );
             },
