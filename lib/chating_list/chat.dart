@@ -17,6 +17,8 @@ class _ChatingState extends State<Chating> {
       body: Column(
         children: [
           Text('nnn'),
+          Text('mm'),
+          Text('ss'),
         ],
       ),
     );
